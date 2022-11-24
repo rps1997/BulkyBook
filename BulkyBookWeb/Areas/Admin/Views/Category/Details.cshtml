@@ -1,0 +1,31 @@
+﻿@model Category
+
+<form method="post" asp-action="Details">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h1 class="text-primary">
+                Details of Category
+            </h1>
+            <hr></hr>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Id"></label>
+            <input asp-for="Id" disabled class="form-control"></input>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" disabled class="form-control"></input>
+        </div>
+        <div class="mb-3">
+            <label asp-for="DisplayOrder"></label>
+            <input asp-for="DisplayOrder" disabled class="form-control"></input>
+        </div>
+        <div class="mb-3">
+            <label asp-for="CreatedDateTime"></label>
+            <input asp-for="CreatedDateTime" disabled class="form-control"></input>
+        </div>
+    
+<a asp-controller="Category" asp-action="Index" class="btn btn-primary">Back to List</a>
+     </div>
+</form>
+
